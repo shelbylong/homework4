@@ -112,8 +112,8 @@ header p{
 }
 
 .about, .method, .clients, .contact{
-  grid-column: 2/3;
-  grid-row: 2/3;
+  grid-column: 2/auto;
+  grid-row: 2/auto;
 }
 
 .about-image, .method-image, .clients-image, .contact-image{
@@ -123,28 +123,28 @@ header p{
 }
 
 .about, .about-image{
-  grid-row: 2/3;
+  grid-row: 2/auto;
 }
 
 .method, .method-image{
-  grid-row: 3/4;
+  grid-row: 3/auto;
 }
 
 
 .clients, .clients-image{
-  grid-row: 4/5;
+  grid-row: 4/auto;
 }
 
 
 .contact, .contact-image{
-  grid-row: 5/6;
+  grid-row: 5/auto;
 }
 
 .text-block{
   background-color: rgba(255, 255, 255, .8);
   border: 10px solid black;
   padding: 30px;
-  text-align: center;
+  align-self: center;
   margin: auto;
 }
 
@@ -153,7 +153,7 @@ header p{
   nav{
     padding: 30px 0px;
     text-align: right;
-    vertical-align: middle;
+    align-self: center;
   }
 
   .container{

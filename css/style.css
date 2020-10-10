@@ -157,8 +157,8 @@ header p{
   }
 
   .container{
-    grid-template-columns: 50px, auto, 500px, auto, and  50px;
-    grid-template-rows: 400px, 400px, 400px, 400px, and 400px;
+    grid-template-columns: 50px auto 500px auto 50px;
+    grid-template-rows: 400px 400px 400px 400px 400px;
   }
 
   .about, .clients, .method-image, .contact-image{

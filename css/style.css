@@ -95,7 +95,7 @@ header{
   background-size: cover;       /* Parallax effect */
   color: white;
   height: 400px;                /* Parallax effect */
-
+  background-image: url("../images/header.jpg");
   /*Your Code Here*/
   /*Set background-image to header.jpg */
  
@@ -112,62 +112,61 @@ header p{
 }
 
 .about, .method, .clients, .contact{
-  /*Your Code Here*/
-
+  grid-column: 2/span 1;
+  grid-row: 2/span 1;
 }
 
 .about-image, .method-image, .clients-image, .contact-image{
-  /*Your Code Here*/
-
+  grid-column: 1/-1;
+  max-height: 700px;
+  overflow: hidden;
 }
 
 .about, .about-image{
-   /*Your Code Here*/
-
+  grid-row: 2/span 1;
 }
 
 .method, .method-image{
-   /*Your Code Here*/
-
+  grid-row: 3/span 1;
 }
 
 
 .clients, .clients-image{
-    /*Your Code Here*/
-
+  grid-row: 4/span 1;
 }
 
 
 .contact, .contact-image{
-    /*Your Code Here*/
-
+  grid-row: 5/span 1;
 }
 
 .text-block{
-background-color: rgba(255, 255, 255, .8);
+  background-color: rgba(255, 255, 255, .8);
   border: 10px solid black;
   padding: 30px;
-  /*Your code here:*/
-
+  text-align: center;
+  margin: auto;
 }
 
 
 @media all and (min-width: 800px){
   nav{
     padding: 30px 0px;
-    /*Your code here:*/
+    justify-content: right;
+    vertical-align: middle;
   }
 
   .container{
-    /*Your code here:*/
+    grid-template-columns: 50px, auto, 500px, auto, and  50px;
+    grid-template-rows: 400px, 400px, 400px, 400px, and 400px;
   }
 
   .about, .clients, .method-image, .contact-image{
-    /*Your code here:*/
-  }
+    grid-column: 3/5;
+    }
 
   .about-image, .clients-image, .method, .contact{
-    /*Your code here:*/
+    grid-column: 2/4;
   }
 }
 

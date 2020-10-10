@@ -112,8 +112,8 @@ header p{
 }
 
 .about, .method, .clients, .contact{
-  grid-column: 2/span 1;
-  grid-row: 2/span 1;
+  grid-column: 2/3;
+  grid-row: 2/3;
 }
 
 .about-image, .method-image, .clients-image, .contact-image{
@@ -123,21 +123,21 @@ header p{
 }
 
 .about, .about-image{
-  grid-row: 2/span 1;
+  grid-row: 2/3;
 }
 
 .method, .method-image{
-  grid-row: 3/span 1;
+  grid-row: 3/4;
 }
 
 
 .clients, .clients-image{
-  grid-row: 4/span 1;
+  grid-row: 4/5;
 }
 
 
 .contact, .contact-image{
-  grid-row: 5/span 1;
+  grid-row: 5/6;
 }
 
 .text-block{
@@ -152,7 +152,7 @@ header p{
 @media all and (min-width: 800px){
   nav{
     padding: 30px 0px;
-    justify-content: right;
+    text-align: right;
     vertical-align: middle;
   }
 

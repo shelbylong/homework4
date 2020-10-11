@@ -50,7 +50,6 @@ links in the navigation are in the hover or focus state.*/
   z-index: 1;
   position: relative;
   top: -40px;
-  /*Your code here*/
 }
 
 .skip a:focus{ 
@@ -83,8 +82,8 @@ footer{
 
 
 .container{
-  grid-template-columns: 1fr 5fr 1fr;
-  grid-auto-rows: auto;
+  grid-template-columns: 1fr 5fr 1fr ;
+  grid-template-rows: auto;
   grid-row-gap: 15px;
 }
 
@@ -96,10 +95,6 @@ header{
   color: white;
   height: 400px;                /* Parallax effect */
   background-image: url("../images/header.jpg");
-  /*Your Code Here*/
-  /*Set background-image to header.jpg */
- 
-
   grid-column: 1 / -1;  /*Can you explain what this does?*/
   grid-row: 1 / auto;   /*Can you rewrite it?*/
 }
@@ -112,32 +107,32 @@ header p{
 }
 
 .about, .method, .clients, .contact{
-  grid-column: 2/auto;
-  grid-row: 2/auto;
+  grid-column: 2 / auto;
+  grid-row: 2 / auto;
 }
 
 .about-image, .method-image, .clients-image, .contact-image{
-  grid-column: 1/-1;
+  grid-column: 1 / -1;
   max-height: 700px;
   overflow: hidden;
 }
 
 .about, .about-image{
-  grid-row: 2/auto;
+  grid-row: 2 / auto;
 }
 
 .method, .method-image{
-  grid-row: 3/auto;
+  grid-row: 3 / auto;
 }
 
 
 .clients, .clients-image{
-  grid-row: 4/auto;
+  grid-row: 4 / auto;
 }
 
 
 .contact, .contact-image{
-  grid-row: 5/auto;
+  grid-row: 5 / auto;
 }
 
 .text-block{
@@ -145,7 +140,6 @@ header p{
   border: 10px solid black;
   padding: 30px;
   align-self: center;
-  margin: auto;
 }
 
 
@@ -162,11 +156,11 @@ header p{
   }
 
   .about, .clients, .method-image, .contact-image{
-    grid-column: 3/5;
+    grid-column: 3 / 5;
     }
 
   .about-image, .clients-image, .method, .contact{
-    grid-column: 2/4;
+    grid-column: 2 / 4;
   }
 }
 
